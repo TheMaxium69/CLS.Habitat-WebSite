@@ -1,3 +1,3 @@
-# MySiteTemplate
+# CLS-Habitat Web Site
 
-Mon template de site web
+Repository du site de C.L.S Habitat
