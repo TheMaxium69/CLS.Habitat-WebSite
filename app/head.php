@@ -5,7 +5,7 @@ function head($page)
 
     //Page
     if ($page == 1) {
-        $title = "Exemple";
+        $title = "C.L.S Habitat";
     } else {
         $title = "404 | Exemple";
     }
