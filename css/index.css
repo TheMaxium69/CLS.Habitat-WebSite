@@ -371,7 +371,7 @@ a.tutorials-link:hover {
 }
 @media (min-width: 768px) {
     #home {
-        height: 80vh;
+        height: 73vh;
         min-height: 640px;
     }
 }
@@ -384,8 +384,7 @@ a.tutorials-link:hover {
     width: 100%;
     min-height: 400px;
     height: 60vh;
-    background-image: url("https://hd.unsplash.com/photo-1457365050282-c53d772ef8b2");
-    background-image: url("https://images.unsplash.com/photo-1457365050282-c53d772ef8b2");
+    background-image: url("../assets/back.jpeg");
     background-size: cover;
     background-position: center bottom;
     will-change: transform;
@@ -393,7 +392,8 @@ a.tutorials-link:hover {
 }
 @media (min-width: 768px) {
     #home:before {
-        height: 80vh;
+        /*height: 80vh;*/
+        height: 88vh;
         min-height: 640px;
     }
 }
