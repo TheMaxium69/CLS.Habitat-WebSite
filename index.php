@@ -28,12 +28,15 @@
         </div>
         <div class="row">
             <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-                <p>Best implementation of Bootstraps Scroll Spy for animated scrolling and page location</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-12">
-                <a class="tutorials-link" href="" role="button">Watch Videos</a>
+            <div class="col-xs-6 ">
+                <a class="tutorials-link float-r" href="#part" role="button">Particulier</a>
+            </div>
+            <div class="col-xs-6">
+                <a class="tutorials-link " href="" role="button">Collectivité</a>
             </div>
         </div>
     </div>
@@ -46,42 +49,44 @@
                 <div class="section-header">
                     À propos
                 </div>
-            </div><!-- /.col -->
-        </div><!-- /.row -->
+            </div>
+        </div>
         <div class="row">
             <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-                <p>ScrollSpy.js highlights page position by applying an 'active' class to the Navigation link within a Bootstrap nav component. It does this by monitoring the #target element of the nav link within the window, waiting for it to reach a given 'Y' position, usually zero.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 
-                <p><highlight>This example</highlight> demonstrates some rich, additional features including <strong>animated scrolling</strong>, <strong>focus events</strong> as well as how to offset with a fixed navigation bar.</p>
+                <p><highlight>Lorem Ipsum</highlight> is simply dummy text of the printing and typesetting industry. <strong>standard dummy text ever</strong>, <strong>since the 1500s</strong> when an unknown printer took a galley .</p>
 
-                <p>It also shows how to ensure that the 'last' #target element is able to scroll to the top for a better user experience (UX)</p>
-            </div><!-- /.col -->
-        </div><!-- /.row -->
-    </div><!-- /.container -->
-</section><!-- /#about -->
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-<section id="demo">
+<section id="part">
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
                 <div class="section-header">
-                    Demo
+                    Particulier
                 </div>
             </div><!-- /.col -->
         </div><!-- /.row -->
         <div class="row">
             <div class="video-roll--container col-xs-12">
                 <ul class="video-roll">
-                    <li><a href="https://youtu.be/kLiMpaMKal8" target="_blank"></a></li>
-                    <li><a href="https://youtu.be/aVFYHGtf6So" target="_blank"></a></li>
-                    <li><a href="https://youtu.be/OKxASY7ABfs" target="_blank"></a></li>
+                    <li><a></a></li>
+                    <li><a></a></li>
+                    <li><a></a></li>
                 </ul>
             </div><!-- /.col -->
         </div><!-- /.row -->
-        <div class="row">
+        <div>
+            <p class="part-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+        <div class="row m-12">
             <div class="col-xs-12 text-center">
-                <a class="tutorials-link" href="https://www.youtube.com/channel/UCydykDsTWRIVnxKHW3SHPQA" role="button">Watch Videos</a>
-                <h4>Check out my YouTube tutorials</h4>
+                <a class=" btn-part" href="" role="button">Plus d'informations</a>
             </div><!-- /.col -->
         </div><!-- /.row -->
     </div><!-- /.container -->
@@ -186,7 +191,7 @@
         <div class="row">
             <div class="col-xs-12">
                 <div class="section-header">
-                    How To
+                    Contact
                 </div>
             </div><!-- /.col -->
         </div><!-- /.row -->
@@ -210,42 +215,17 @@
 
         <div class="row">
             <div class="col-xs-12">
-                <figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'body'</span><span class="p">).</span><span class="nx">scrollspy</span><span class="p">({</span>
-  <span class="na">offset</span><span class="p">:</span> <span class="s1">offsetHeight</span> <span class="c1">/*A numeric representing pixel count*/</span>
-<span class="p">})</span></code></pre>
+                <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;body</span> <span class="na">data-spy=</span><span class="s">"scroll"</span> <span class="na">data-target=</span><span class="s">"#navbar-example"</span> <span class="na">data-offset=</span><span class="s">"70"</span><span class="nt">&gt;</span>
+  ...
+<span class="nt">&lt;/body&gt;</span></code></pre>
                 </figure>
             </div><!-- /.col -->
         </div><!-- /.row -->
 
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="section-sub-header">
-                    Ensure last #target scrolls to top
-                </div>
-                <p>A common problem I see with scrollspy implementations is when the last navigation target doesn't navigation to the top of the screen. This causes issues for scrollspy as well as confusing the user if the target they clicked is half way down the page.</p>
-                <p>The problem is simple, the document isn't long enough to allow it to scroll to the top.</p>
-
-                <p>A simple solution is to dynamically add padding-bottom to the body via JQuery, which increases the height to the pixel perfect minimum. We need to do this both at render/page load and if the window is resized. The below code is a simplified and calculates the height of all sibling elements (after the target) to calculate</p>
 
 
-            </div><!-- /.col -->
-        </div><!-- /.row -->
 
-        <div class="row">
-            <div class="col-xs-12">
-                <figure class="highlight"><pre><code class="language-js" data-lang="js">
-<span class="kd">var</span> <span class="vg">height</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">'#targetId'</span><span class="p">).</span><span class="nx">innerHeight</span><span class="p">(</span><span class="p">)</span>
-<span class="kd">var</span> <span class="vg">windowHeight</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">window</span><span class="p">).</span><span class="nx">height</span><span class="p">(</span><span class="p">)</span>
-<span class="kd">var</span> <span class="vg">navHeight</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">'nav.navbar'</span><span class="p">).</span><span class="nx">innerHeight</span><span class="p">(</span><span class="p">)</span>
-<span class="kd">var</span> <span class="vg">siblingHeight</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">'#targetId'</span><span class="p">).</span><span class="nx">nextAll</span><span class="p">(</span><span class="p">).</span><span class="nx">innherHeight</span><span class="p">(</span><span class="p">)</span>
 
-<span class="nx">if</span><span class="p">(</span><span class="nx">height </span><span class="nx">&lt;</span><span class="nx"> windowHeight</span><span class="p">)</span><span class="p">(</span><span class="p">{</span>
-  <span class="nx">$</span><span class="p">(</span><span class="s1">'body'</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="na">"padding-bottom"</span><span class="p">,</span> <span class="nx">windowHeight</span><span class="p">-</span><span class="nx">navHeight</span><span class="p">-</span><span class="nx">height</span><span class="p">-</span><span class="nx">siblingHeight</span> <span class="p">+</span> <span class="p">"</span><span class="s1">px</span><span class="p">"</span><span class="p">)</span>
-<span class="p">}</span>
-</code></pre>
-                </figure>
-            </div><!-- /.col -->
-        </div><!-- /.row -->
     </div><!-- /.container -->
 </section>
 <footer>

@@ -1,5 +1,5 @@
 :root {
-    --color-page1-green: #4d8d4c;
+    --color-page1-green: #17ad25;
     --color-page1-green-hover: #7fbf7f;
 }
 
@@ -167,7 +167,7 @@ ul.navbar-nav {
         justify-content: center;
         float: none;
         text-align: center;
-        color: #BDC4D0;
+        color: #c5c1c1;
     }
 }
 @media (min-width: 768px) {
@@ -199,8 +199,8 @@ ul.navbar-nav > li > a:focus {
 @media (min-width: 768px) {
     ul.navbar-nav > li.active {
         color: ;
-        background: rgba(255, 255, 255, 0.15);
-        box-shadow: inset 0 -3px 0 0 var(--color-page1-green);
+        background: rgb(151 146 146 / 15%);
+        box-shadow: inset 0 -3px 0 0 #000000;
     }
 }
 ul.navbar-nav > li.active > a:hover, ul.navbar-nav > li.active > a:focus {
@@ -268,6 +268,23 @@ section.focus .page-header:after {
     color: #333;
     background: #F3F4F8;
 }
+a.btn-part{
+    margin: 0 auto 25px;
+    width: 294px;
+
+    display: block;
+    position: relative;
+    padding: 15px 0;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: var(--color-page1-green);
+    border: 2px solid var(--color-page1-green);
+    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
 
 .page-header {
     position: relative;
@@ -304,7 +321,7 @@ a.tutorials-link {
     display: block;
     position: relative;
     width: 180px;
-    margin: 0 auto 25px;
+    margin: 0 0 25px;
     padding: 15px 0;
     font-size: 0.875rem;
     font-weight: 600;
@@ -317,6 +334,12 @@ a.tutorials-link {
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
 }
 a.tutorials-link:hover {
+    color: #e7e6f1;
+    background: var(--color-page1-green);
+    box-shadow: 0 6px 12px -4px rgba(0, 0, 0, 0.3);
+}
+
+a.btn-part:hover {
     color: #e7e6f1;
     background: var(--color-page1-green);
     box-shadow: 0 6px 12px -4px rgba(0, 0, 0, 0.3);
@@ -389,6 +412,7 @@ a.tutorials-link:hover {
     background-position: center bottom;
     will-change: transform;
     z-index: 0;
+    filter: blur(2px) brightness(0.8);
 }
 @media (min-width: 768px) {
     #home:before {
@@ -481,7 +505,7 @@ a.tutorials-link:hover {
     margin: 0;
     padding: 25px 0;
     text-align: center;
-    text-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5), 1px 1px 3px rgba(0, 0, 0, 0.3);
+    text-shadow: 0px 0px 40px rgb(0 0 0), 1px 1px 3px rgb(0 0 0);
     line-height: 26px;
     color: #e7e6f1;
 }
@@ -491,10 +515,10 @@ a.tutorials-link:hover {
     color: #333;
 }
 
-#demo {
+#part {
     background: #F3F4F8;
 }
-#demo h4 {
+#part h4 {
     margin-bottom: 20px;
     margin-bottom: 0px;
     font-size: 0.875rem;
@@ -504,15 +528,15 @@ a.tutorials-link:hover {
     letter-spacing: 1px;
     color: #BDC4D0;
 }
-#demo .video-roll--container {
+#part .video-roll--container {
     padding: 0;
 }
 @media (min-width: 768px) {
-    #demo .video-roll--container {
+    #part .video-roll--container {
         padding: 0 15px;
     }
 }
-#demo .video-roll {
+#part .video-roll {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -525,11 +549,15 @@ a.tutorials-link:hover {
     list-style: none;
 }
 @media (min-width: 768px) {
-    #demo .video-roll {
-        margin: 0 auto 120px;
+    #part .video-roll {
+        margin: 0 auto 75px;
     }
 }
-#demo .video-roll:after {
+.m-12{
+    margin-top: 57px;
+}
+
+#part .video-roll:after {
     content: "";
     display: block;
     width: 30%;
@@ -541,11 +569,11 @@ a.tutorials-link:hover {
     box-shadow: 0 50px 40px rgba(0, 0, 0, 0.4);
 }
 @media (min-width: 768px) {
-    #demo .video-roll:after {
+    #part .video-roll:after {
         margin: 0px auto 0;
     }
 }
-#demo .video-roll li {
+#part .video-roll li {
     display: flex;
     flex-direction: column;
     flex-grow: 0;
@@ -555,12 +583,12 @@ a.tutorials-link:hover {
     position: relative;
     background: transparent;
 }
-#demo .video-roll li:before {
+#part .video-roll li:before {
     content: "";
     display: block;
     padding-top: 56.25%;
 }
-#demo .video-roll li:after {
+#part .video-roll li:after {
     content: "";
     display: block;
     position: absolute;
@@ -575,7 +603,7 @@ a.tutorials-link:hover {
     transform: translate(-50%, 0);
     transform: translate3d(-50%, 0, 0);
 }
-#demo .video-roll li:first-child {
+#part .video-roll li:first-child {
     visibility: hidden;
     flex-basis: 10%;
     transform: translate(50%, 0);
@@ -583,34 +611,36 @@ a.tutorials-link:hover {
     opacity: 0;
 }
 @media (min-width: 768px) {
-    #demo .video-roll li:first-child {
+    #part .video-roll li:first-child {
         visibility: visible;
         flex-basis: 30%;
         opacity: 1;
     }
 }
-#demo .video-roll li:first-child a {
-    background-image: url("https://i.ytimg.com/vi/kLiMpaMKal8/maxresdefault.jpg");
+#part .video-roll li:first-child a {
+    background-image: url(../assets/part1.png);
+    border: solid 1px black;
     transform-origin: left center;
 }
-#demo .video-roll li:nth-child(2) {
+#part .video-roll li:nth-child(2) {
     flex-basis: 80%;
     z-index: 2;
 }
 @media (min-width: 768px) {
-    #demo .video-roll li:nth-child(2) {
+    #part .video-roll li:nth-child(2) {
         flex-basis: 40%;
     }
 }
-#demo .video-roll li:nth-child(2):after {
+#part .video-roll li:nth-child(2):after {
     display: none;
 }
-#demo .video-roll li:nth-child(2) a {
+#part .video-roll li:nth-child(2) a {
     flex-grow: 1;
-    background-image: url("https://i.ytimg.com/vi/aVFYHGtf6So/maxresdefault.jpg");
+    background-image: url("../assets/part2.png");
+    border: solid 1px var(--color-page1-green);
     transform-origin: center center;
 }
-#demo .video-roll li:last-child {
+#part .video-roll li:last-child {
     visibility: hidden;
     flex-basis: 10%;
     transform: translate(-50%, 0);
@@ -618,17 +648,19 @@ a.tutorials-link:hover {
     opacity: 0;
 }
 @media (min-width: 768px) {
-    #demo .video-roll li:last-child {
+    #part .video-roll li:last-child {
         visibility: visible;
         flex-basis: 30%;
         opacity: 1;
     }
 }
-#demo .video-roll li:last-child a {
-    background-image: url("https://i.ytimg.com/vi/OKxASY7ABfs/maxresdefault.jpg");
+#part .video-roll li:last-child a {
+    background-image: url("../assets/part3.png");
+
+    border: solid 1px black;
     transform-origin: right center;
 }
-#demo .video-roll li a {
+#part .video-roll li a {
     position: absolute;
     top: 0;
     left: 0;
@@ -641,9 +673,15 @@ a.tutorials-link:hover {
     transition: transform 0.2s ease-out;
     will-change: transform;
 }
-#demo .video-roll li a:hover {
+#part .video-roll li a:hover {
     transform: translate(0, -4px);
     transform: translate3d(0, -4px, 0);
+}
+
+.part-p{
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
 }
 
 #features {
