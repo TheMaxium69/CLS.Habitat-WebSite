@@ -19,6 +19,16 @@
                         border-radius: 10px;
                         margin-bottom: 31px;
                         margin-top: 35px;
+                        transform: translate(0, 0);
+                        transform: translate3d(0, 0, 0);
+                        transition: transform 0.2s ease-out;
+                        will-change: transform;
+                    }
+
+                    .home-logo img:hover{
+
+                        transform: translate(0, -4px);
+                        transform: translate3d(0, -4px, 0);
                     }
 
                 </style>
@@ -158,7 +168,7 @@
             </div><!-- /.col -->
         </div><!-- /.row -->
 
-        <div class="row" id="form-contact" style="border-top: solid 1px var(--color-page1-green); border-bottom: solid 1px  var(--color-page1-green)">
+        <div class="row" id="form-contact" style="border: solid 1px var(--color-page1-green);">
 
             <div class="col-xs-6" style="    background-color: #f2f2f2;">
                 <div class="container">
@@ -196,7 +206,8 @@
                     margin:0 auto;">
 
                     <h1 style="color: var(--color-page1-green);
-                    width: 100%;">
+                    width: 100%;
+                    text-align: center;">
                         Nous contactez autrement
                     </h1>
 
@@ -254,17 +265,16 @@
                 }
 
                 #form-contact .container {
-                    /* Ajouter box-sizing */
                     box-sizing : border-box;
                     border-radius:5px;
                     background-color:#f2f2f2;
                     padding:20px;
                     width: 100%;
-                    /* redéfinition 400 + 2*20 */
                     max-width: 440px;
                     margin:0 auto;
                 }
                 #form-contact h1  {
+                    text-align: center;
                     color: var(--color-page1-green);
                     width: 100%;
                 }
@@ -279,10 +289,62 @@
 
     </div><!-- /.container -->
 </section>
+
+
+
+
+
+    <div class="fixed-bottom">
+
+        <div>
+
+            <img src="assets/label.webp">
+        </div>
+
+
+    </div>
+
+
+<style>
+
+    .fixed-bottom{
+        position: fixed;
+        right: 0;
+        bottom: 1%;
+        left: 2%;
+        z-index: 1030;
+
+
+    }
+
+    div.fixed-bottom div img{
+
+        transform: translate(0, 0);
+        transform: translate3d(0, 0, 0);
+        transition: transform 0.2s ease-out;
+        will-change: transform;
+    }
+
+    div.fixed-bottom div img:hover{
+
+        transform: translate(0, -4px);
+        transform: translate3d(0, -4px, 0);
+    }
+
+
+</style>
+
+
+
+
+
+
+
+
 <footer>
     <div class="container text-white d-flex align-items-center justify-content-between">
         <a id="logo1" href="#"><img src="assets/logoT.png" alt=""></a>
-        <span>2022 © <a href="">CLS-Habitat</a><br>Site Web Created by Tyrolium</span>
+        <span>2022 © CLS-Habitat<br><a style="color: var(--color-page1-green)" href="legal.php">Mention Legal</a></span>
             <p style="text-align: start">
                 mail.com<br>
                 +21 65465 654654
@@ -315,6 +377,8 @@
     footer img {
         width: 224px;
         margin-left: -102px;
+        transition: transform 0.2s ease-out;
+        will-change: transform;
     }
 
     footer img:hover {
