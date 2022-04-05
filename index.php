@@ -41,8 +41,6 @@
                     }
 
                 </style>
-                <!--<h1>ScrollSpy</h1>
-                <h4>by Boomer</h4>-->
             </div>
         </div>
         <div class="row">
@@ -121,15 +119,15 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row" id="collect-row-1">
 
-            <div class="col-xs-6">
+            <div class="col-xs-6 col-6-colle">
                 <p class="coll-p">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                 </p>
             </div>
 
-            <div class="col-xs-6">
+            <div class="col-xs-6 col-6-colle">
                 <div>
 
                     <img id="colimg1" src="assets/mairie.jpg">
@@ -139,9 +137,9 @@
 
         </div>
 
-        <div class="row">
+        <div class="row" >
 
-            <div class="col-xs-6">
+            <div class="col-xs-6 col-6-colle" id="collimg2">
                 <div>
 
                     <img id="colimg2" src="assets/ehpad.jpg">
@@ -149,7 +147,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-6">
+            <div class="col-xs-6 col-6-colle">
                 <p class="coll-p">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                 </p>

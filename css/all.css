@@ -5,3 +5,9 @@
 .float-r{
     float: right;
 }
+
+@media (max-width: 441px) {
+    .float-r{
+        float: unset;
+    }
+}

@@ -339,6 +339,18 @@ a.tutorials-link {
     border: 2px solid var(--color-page1-green);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
 }
+
+@media (max-width: 441px) {
+    a.tutorials-link {
+        margin: 0 auto 25px;
+    }
+
+    .col-xs-6{
+        width: 100%;
+    }
+
+}
+
 a.tutorials-link:hover {
     color: #e7e6f1;
     background: var(--color-page1-green);
@@ -727,7 +739,29 @@ a.btn-part:hover {
 }
 
 .coll-p{
-    text-align: center; padding: 86px 65px
+    text-align: center;
+    padding: 86px 65px
+}
+
+@media (max-width: 991px) {
+    .coll-p{
+        padding: 29px;
+    }
+
+    #collect-row-1{
+        margin-bottom: 40px;
+    }
+
+}
+
+@media (max-width: 654px) {
+    .col-6-colle{
+        width: 100%;
+    }
+
+    #collimg2{
+        display: none;
+    }
 }
 
 #features {
