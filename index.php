@@ -36,7 +36,7 @@
                 <a class="tutorials-link float-r" href="#part" role="button">Particulier</a>
             </div>
             <div class="col-xs-6">
-                <a class="tutorials-link " href="" role="button">Collectivité</a>
+                <a class="tutorials-link " href="#col" role="button">Collectivité</a>
             </div>
         </div>
     </div>
@@ -70,8 +70,8 @@
                 <div class="section-header">
                     Particulier
                 </div>
-            </div><!-- /.col -->
-        </div><!-- /.row -->
+            </div>
+        </div>
         <div class="row">
             <div class="video-roll--container col-xs-12">
                 <ul class="video-roll">
@@ -79,112 +79,74 @@
                     <li><a></a></li>
                     <li><a></a></li>
                 </ul>
-            </div><!-- /.col -->
-        </div><!-- /.row -->
+            </div>
+        </div>
         <div>
             <p class="part-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
         </div>
         <div class="row m-12">
             <div class="col-xs-12 text-center">
                 <a class=" btn-part" href="" role="button">Plus d'informations</a>
-            </div><!-- /.col -->
-        </div><!-- /.row -->
-    </div><!-- /.container -->
+            </div>
+        </div>
+    </div>
 </section>
 
-<section id="features">
+<section id="col">
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
                 <div class="section-header">
-                    Features
+                    Colectivité
                 </div>
-            </div><!-- /.col -->
-        </div><!-- /.row -->
+            </div>
+        </div>
 
         <div class="row">
-            <div class="feature-container col-xs-12">
-                <div class="row">
-                    <div class="feature col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0 text-center">
-                        <svg class="lnr lnr-magic-wand"><use xlink:href="#lnr-magic-wand"></use></svg>
-                        <h4>Animated Scroll</h4>
-                        <p>Smooth, animated scroll between navigation links</p>
-                    </div><!-- /.feature -->
 
-                    <div class="feature col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0 text-center">
-                        <svg class="lnr lnr-map-marker"><use xlink:href="#lnr-map-marker"></use></svg>
-                        <h4>Page Location</h4>
-                        <p>Track page locations when scrolling</p>
-                    </div><!-- /.feature -->
+            <div class="col-xs-6">
+                <p class="coll-p">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </p>
+            </div>
 
-                    <div class="feature col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0 text-center">
-                        <svg class="lnr lnr-bullhorn"><use xlink:href="#lnr-bullhorn"></use></svg>
-                        <h4>Focus Events</h4>
-                        <p>Draw user attention to navigated sections</p>
-                    </div><!-- /.feature -->
-                </div><!-- /.row -->
-            </div><!-- /.feature-container -->
+            <div class="col-xs-6">
+                <div>
 
-        </div><!-- /.row -->
-    </div><!-- /.container -->
+                    <img id="colimg1" src="assets/mairie.jpg">
 
-    <div class="container-fluid">
-        <div class="banner row">
-            <div class="banner-child bc-left col-sm-6">
-                <div class="section-sub-header">
-                    Animated Scroll
                 </div>
+            </div>
 
-                <div class="animated-scroll">
-                    <div class="scroll-header">
-                        <div class="scroll-nav sn-1"></div>
-                        <div class="scroll-nav sn-2"></div>
-                        <div class="scroll-nav sn-3"></div>
-                        <svg class="cursor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 24 24" id="Layer_1" version="1.0" viewBox="0 0 24 24" xml:space="preserve"><path d="M7,2l12,11.2l-5.8,0.5l3.3,7.3l-2.2,1l-3.2-7.4L7,18.5V2"/></svg>
-                    </div><!-- /.scroll-header -->
+        </div>
 
-                    <div class="scroll-body">
-                        <div class="scroll-child sc-1"></div>
-                        <div class="scroll-child sc-2"></div>
-                        <div class="scroll-child sc-3"></div>
-                        <div class="scroll-child sc-back-to-top"></div>
-                    </div><!-- /.scroll-body -->
-                </div><!-- /.animated scroll -->
-            </div><!-- /.banner-child -->
+        <div class="row">
 
-            <div class="banner-child bc-right col-sm-6">
-                <div class="section-sub-header">
-                    Focus Events | UX
+            <div class="col-xs-6">
+                <div>
+
+                    <img id="colimg2" src="assets/ehpad.jpg">
+
                 </div>
+            </div>
 
-                <div class="focus-events">
-                    <div class="scroll-header">
-                        <div class="scroll-nav sn-1"></div>
-                        <div class="scroll-nav sn-2"></div>
-                        <svg class="cursor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 24 24" id="Layer_1" version="1.0" viewBox="0 0 24 24" xml:space="preserve"><path d="M7,2l12,11.2l-5.8,0.5l3.3,7.3l-2.2,1l-3.2-7.4L7,18.5V2"/></svg>
-                    </div><!-- /.scroll-header -->
+            <div class="col-xs-6">
+                <p class="coll-p">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </p>
+            </div>
 
-                    <div class="scroll-body">
-                        <div class="scroll-child sc-1">
-                            <div class="header"></div>
-                            <div class="sub-header"></div>
-                            <div class="body"></div>
-                            <div class="body"></div>
-                            <div class="body"></div>
-                        </div>
-                        <div class="scroll-child sc-2">
-                            <div class="header"></div>
-                            <div class="sub-header"></div>
-                            <div class="body"></div>
-                            <div class="body"></div>
-                            <div class="body"></div>
-                        </div>
-                    </div><!-- /.scroll-body -->
-                </div><!-- /.animated scroll -->
-            </div><!-- /.banner-child -->
-        </div><!-- /.row -->
-    </div><!-- /.container-fluid -->
-</section><!-- /#features -->
+
+        </div>
+
+        <div class="row m-12">
+            <div class="col-xs-12 text-center">
+                <a class="btn-part" href="" role="button">Plus d'informations</a>
+            </div>
+        </div>
+    </div>
+
+</section>
 
 <section id="howto">
     <div class="container">
@@ -196,31 +158,120 @@
             </div><!-- /.col -->
         </div><!-- /.row -->
 
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="section-sub-header">
-                    Offest a Fixed Navbar
+        <div class="row" id="form-contact" style="border-top: solid 1px var(--color-page1-green); border-bottom: solid 1px  var(--color-page1-green)">
+
+            <div class="col-xs-6" style="    background-color: #f2f2f2;">
+                <div class="container">
+                    <h1>Formulaire de contact</h1>
+                    <form action="/action_page.php">
+                        <label for="fname">Nom & prénom</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Votre nom et prénom">
+
+
+                        <label for="emailAddress">Email</label>
+                        <input id="emailAddress" type="email" name="email" placeholder="Votre email">
+
+                        <label for="sujet">Numéro de téléphone</label>
+                        <input type="text" id="sujet" name="sujet" placeholder="Votre numéro">
+
+                        <label for="subject">Message</label>
+                        <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px"></textarea>
+
+                        <input type="submit" value="Envoyer">
+                    </form>
                 </div>
-            </div><!-- /.col -->
+            </div>
+
+
+
+            <div class="col-xs-6">
+
+
+                <div style="text-align: end;
+                    box-sizing : border-box;
+                    border-radius:5px;
+                    padding:20px;
+                    width: 100%;
+                    max-width: 440px;
+                    margin:0 auto;">
+
+                    <h1 style="color: var(--color-page1-green);
+                    width: 100%;">
+                        Nous contactez autrement
+                    </h1>
+
+                    <p style="text-align: center">
+
+                        <br><br>
+
+
+                        Notre numéro <br>
+                        <j style="color: var(--color-page1-green)">+65 65 44 45 45</j> <br><br>
+                        Notre mail <br>
+                        <j style="color: var(--color-page1-green)">azeaz</j> <br><br>
+
+                        <br><br>
+
+                        Plus d'informations sur CLS-Habitat : <br>
+                        <br>
+                        Adresse
+                        ...
+                        ..
+
+                    </p>
+                </div>
+
+            </div>
+
+            <style>
+                #form-contact input[type=text], textarea, input[type=email] {
+                    width: 100%;
+                    padding: 12px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                    margin-top: 6px;
+                    margin-bottom: 16px;
+                    margin-right: 0px;
+                    margin-left: 0px;
+                    resize: vertical;
+                }
+                #form-contact label{margin-right: 0px;
+                    margin-left: 0px;
+                    width: 100%;}
+
+                #form-contact input[type=submit] {
+                    background-color: var(--color-page1-green);
+                    color: white;
+                    padding: 12px 20px;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                }
+
+                #form-contact input[type=submit]:hover {
+                    background-color: #37ff54;
+                }
+
+                #form-contact .container {
+                    /* Ajouter box-sizing */
+                    box-sizing : border-box;
+                    border-radius:5px;
+                    background-color:#f2f2f2;
+                    padding:20px;
+                    width: 100%;
+                    /* redéfinition 400 + 2*20 */
+                    max-width: 440px;
+                    margin:0 auto;
+                }
+                #form-contact h1  {
+                    color: var(--color-page1-green);
+                    width: 100%;
+                }
+            </style>
         </div><!-- /.row -->
 
-        <div class="row">
-            <div class="col-xs-12">
-                <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;body</span> <span class="na">data-spy=</span><span class="s">"scroll"</span> <span class="na">data-target=</span><span class="s">"#navbar-example"</span> <span class="na">data-offset=</span><span class="s">"70"</span><span class="nt">&gt;</span>
-  ...
-<span class="nt">&lt;/body&gt;</span></code></pre>
-                </figure>
-            </div><!-- /.col -->
-        </div><!-- /.row -->
 
-        <div class="row">
-            <div class="col-xs-12">
-                <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;body</span> <span class="na">data-spy=</span><span class="s">"scroll"</span> <span class="na">data-target=</span><span class="s">"#navbar-example"</span> <span class="na">data-offset=</span><span class="s">"70"</span><span class="nt">&gt;</span>
-  ...
-<span class="nt">&lt;/body&gt;</span></code></pre>
-                </figure>
-            </div><!-- /.col -->
-        </div><!-- /.row -->
 
 
 
@@ -229,16 +280,59 @@
     </div><!-- /.container -->
 </section>
 <footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h4>
-                    This is a footer
-                </h4>
-            </div>
-        </div>
+    <div class="container text-white d-flex align-items-center justify-content-between">
+        <a id="logo1" href="#"><img src="assets/logoT.png" alt=""></a>
+        <span>2022 © <a href="">CLS-Habitat</a><br>Site Web Created by Tyrolium</span>
+            <p style="text-align: start">
+                mail.com<br>
+                +21 65465 654654
+
+            </p>
     </div>
 </footer>
+
+<style>
+
+    footer {
+        background-color: #e6e8f0;
+        border-top: 10px solid;
+        border-color: var(--color-page1-green);
+        min-height: 240px;
+        padding: 50px 0;
+    }
+
+    footer div{
+        color: black;
+        text-align: center;
+        align-items: center !important;
+        justify-content: space-between !important;
+        display: flex !important;
+        margin-top: 20px;
+    }
+    footer span{
+        text-align: center;
+    }
+    footer img {
+        width: 224px;
+        margin-left: -102px;
+    }
+
+    footer img:hover {
+        -webkit-transform:scale(1.25); /* Safari et Chrome */
+        -moz-transform:scale(1.25); /* Firefox */
+        -ms-transform:scale(1.25); /* Internet Explorer 9 */
+        -o-transform:scale(1.25); /* Opera */
+        transform:scale(1.25);
+    }
+
+    footer a{
+        color: black;
+    }
+
+    footer a:hover{
+        color: black;
+    }
+</style>
 <a href="#home" role="button" class="scrollTop">
     <svg class="lnr lnr-chevron-up"><use xlink:href="#lnr-chevron-up"></use></svg>
 </a>

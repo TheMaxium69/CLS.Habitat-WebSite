@@ -23,8 +23,8 @@ html {
 body {
     position: relative;
     min-height: 100%;
-    background: #2F3032;
-    box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.1), inset 0 0 20px rgba(0, 0, 0, 0.08);
+    background: #e6e8f0;
+    /*box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.1), inset 0 0 20px rgba(0, 0, 0, 0.08);*/
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -307,15 +307,12 @@ a.btn-part{
 }
 
 footer {
-    min-height: 240px;
     position: relative;
-    padding: 50px 0 150px;
-    font-size: 22px;
     text-align: center;
     letter-spacing: 1px;
-    color: #e7e6f1;
-    background: #2F3032;
+    background: red;
 }
+
 
 a.tutorials-link {
     display: block;
@@ -682,6 +679,46 @@ a.btn-part:hover {
     text-align: center;
     color: #333;
     margin-bottom: 25px;
+}
+
+#colimg1{
+
+    width: 100%;
+    border: solid 1px var(--color-page1-green);
+
+    transform: translate(0, 0);
+    transform: translate3d(0, 0, 0);
+    transition: transform 0.2s ease-out;
+    will-change: transform;
+
+}
+
+#colimg1:hover {
+
+    transform: translate(0, -4px);
+    transform: translate3d(0, -4px, 0);
+}
+
+#colimg2{
+
+    width: 100%;
+    border: solid 1px black;
+
+    transform: translate(0, 0);
+    transform: translate3d(0, 0, 0);
+    transition: transform 0.2s ease-out;
+    will-change: transform;
+
+}
+
+#colimg2:hover {
+
+    transform: translate(0, -4px);
+    transform: translate3d(0, -4px, 0);
+}
+
+.coll-p{
+    text-align: center; padding: 86px 65px
 }
 
 #features {
