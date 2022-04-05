@@ -758,6 +758,9 @@ a.btn-part:hover {
     .col-6-colle{
         width: 100%;
     }
+    #collect-row-1{
+        margin-bottom: 0px;
+    }
 
     #collimg2{
         display: none;
