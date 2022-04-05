@@ -11,6 +11,8 @@
                     .home-logo{
                         text-align: center;
                     }
+                    
+
 
                     .home-logo img{
                         width: 481px;
@@ -23,6 +25,13 @@
                         transform: translate3d(0, 0, 0);
                         transition: transform 0.2s ease-out;
                         will-change: transform;
+                    }
+
+                    @media (max-width: 540px) {
+                        .home-logo img{
+                            width: 87%;
+                        }
+
                     }
 
                     .home-logo img:hover{
