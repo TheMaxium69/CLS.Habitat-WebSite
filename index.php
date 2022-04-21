@@ -1,4 +1,24 @@
-<?php include "app/app.php"; $page = 1; head($page); ?>
+<?php include "app/app.php"; $page = 1; head($page);
+
+require "db/function.php";
+$AllEnv = getAllEnv();
+
+foreach ($AllEnv as $EnvSection){
+
+    if ($EnvSection['name'] == "slog"){ $SectionSlog = $EnvSection['content']; }
+    if ($EnvSection['name'] == "about"){ $SectionAbout = $EnvSection['content']; }
+    if ($EnvSection['name'] == "part"){ $SectionPart = $EnvSection['content']; }
+    if ($EnvSection['name'] == "col1"){ $SectionCol1 = $EnvSection['content']; }
+    if ($EnvSection['name'] == "col2"){ $SectionCol2 = $EnvSection['content']; }
+    if ($EnvSection['name'] == "contact"){ $SectionContact = $EnvSection['content']; }
+
+    if ($EnvSection['name'] == "adresse"){ $SectionAdresse = $EnvSection['content']; }
+    if ($EnvSection['name'] == "mail"){ $SectionMail = $EnvSection['content']; }
+    if ($EnvSection['name'] == "numero"){ $SectionNum = $EnvSection['content']; }
+    if ($EnvSection['name'] == "siret"){ $SectionSiret = $EnvSection['content']; }
+}
+
+?>
 <body  data-spy="scroll" data-target="#scroll-spy"> <header> <?php navbar($page); ?> </header>
 
 <section id="home">
@@ -45,7 +65,7 @@
         </div>
         <div class="row">
             <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                <p><?= $SectionSlog ?></p>
             </div>
         </div>
         <div class="row">
@@ -70,11 +90,9 @@
         </div>
         <div class="row">
             <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 
-                <p><highlight>Lorem Ipsum</highlight> is simply dummy text of the printing and typesetting industry. <strong>standard dummy text ever</strong>, <strong>since the 1500s</strong> when an unknown printer took a galley .</p>
 
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                <?= $SectionAbout ?>
             </div>
         </div>
     </div>
@@ -99,11 +117,11 @@
             </div>
         </div>
         <div>
-            <p class="part-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p class="part-p"><?= $SectionPart ?></p>
         </div>
         <div class="row m-12">
             <div class="col-xs-12 text-center">
-                <a class=" btn-part" href="" role="button">Plus d'informations</a>
+                <!--<a class=" btn-part" href="" role="button">Plus d'informations</a>-->
             </div>
         </div>
     </div>
@@ -123,7 +141,7 @@
 
             <div class="col-xs-6 col-6-colle">
                 <p class="coll-p">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    <?= $SectionCol1 ?>
                 </p>
             </div>
 
@@ -149,7 +167,7 @@
 
             <div class="col-xs-6 col-6-colle">
                 <p class="coll-p">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    <?= $SectionCol2 ?>
                 </p>
             </div>
 
@@ -158,7 +176,7 @@
 
         <div class="row m-12">
             <div class="col-xs-12 text-center">
-                <a class="btn-part" href="" role="button">Plus d'informations</a>
+                <!--<a class="btn-part" href="" role="button">Plus d'informations</a>-->
             </div>
         </div>
     </div>
@@ -180,19 +198,22 @@
             <div class="col-xs-6" style="    background-color: #f2f2f2;">
                 <div class="container">
                     <h1>Formulaire de contact</h1>
-                    <form action="/action_page.php">
-                        <label for="fname">Nom & prénom</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Votre nom et prénom">
+                    <form action="db/add.php" method="GET">
+                        <label for="fname">Nom</label>
+                        <input type="text" id="fname" placeholder="Votre nom" name="lastName" required>
+
+                        <label for="fname">Prénom</label>
+                        <input type="text" id="fname" placeholder="Votre prénom" name="firstName" required>
 
 
                         <label for="emailAddress">Email</label>
-                        <input id="emailAddress" type="email" name="email" placeholder="Votre email">
+                        <input id="emailAddress" type="email" placeholder="Votre email" name="email" required>
 
                         <label for="sujet">Numéro de téléphone</label>
-                        <input type="text" id="sujet" name="sujet" placeholder="Votre numéro">
+                        <input type="text" id="sujet" placeholder="Votre numéro" name="phone">
 
                         <label for="subject">Message</label>
-                        <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px"></textarea>
+                        <textarea id="subject" placeholder="Votre message" style="height:200px" name="content" required></textarea>
 
                         <input type="submit" value="Envoyer">
                     </form>
@@ -224,18 +245,22 @@
 
 
                         Notre numéro <br>
-                        <j style="color: var(--color-page1-green)">+65 65 44 45 45</j> <br><br>
+                        <j style="color: var(--color-page1-green)"><?= $SectionNum ?></j> <br><br>
                         Notre mail <br>
-                        <j style="color: var(--color-page1-green)">azeaz</j> <br><br>
+                        <j style="color: var(--color-page1-green)"><a href="mailto:<?= $SectionMail ?>"><?= $SectionMail ?></a></j> <br><br>
 
-                        <br><br>
+                        Notre adresse <br>
+                        <j style="color: var(--color-page1-green)"><?= $SectionAdresse ?></j> <br><br>
+
+                        Notre siret <br>
+                        <j style="color: var(--color-page1-green)"><?= $SectionSiret ?></j> <br><br>
+
+
+                        <br>
 
                         Plus d'informations sur CLS-Habitat : <br>
                         <br>
-                        Adresse
-                        ...
-                        ..
-
+                        <?= $SectionContact ?>
                     </p>
                 </div>
 
@@ -268,7 +293,7 @@
                 }
 
                 #form-contact input[type=submit]:hover {
-                    background-color: #37ff54;
+                    background-color: #588920;
                 }
 
                 #form-contact .container {
@@ -295,6 +320,8 @@
 
 
     </div><!-- /.container -->
+
+
 </section>
 
 
@@ -353,8 +380,8 @@
         <a id="logo1" href="#"><img src="assets/logoT.png" alt=""></a>
         <span>2022 © CLS-Habitat<br><a style="color: var(--color-page1-green)" href="legal.php">Mention Legal</a></span>
             <p style="text-align: start">
-                mail.com<br>
-                +21 65465 654654
+                <a href="mailto:<?= $SectionMail ?>"><?= $SectionMail ?></a><br>
+                <?= $SectionNum ?>
 
             </p>
     </div>
@@ -408,6 +435,33 @@
     <svg class="lnr lnr-chevron-up"><use xlink:href="#lnr-chevron-up"></use></svg>
 </a>
 
+
+<script src='https://unpkg.com/izitoast/dist/js/iziToast.min.js'></script>
+<script  src="javascriptfile/notif.js"></script>
+
+<?php if (!empty($_GET['err'])) {?>
+    <script>
+        if(Text != 1){
+            iziToast.error({
+                title: 'Erreur',
+                position: 'bottomRight',
+                message: 'Une erreur est survenue | Code : <?php echo $_GET['err']; ?>'
+            });
+        }
+    </script>
+<?php } ?>
+
+<?php if (!empty($_GET['true'])) {?>
+    <script>
+        if(Text != 1){
+            iziToast.success({
+                title: 'OK',
+                position: 'bottomRight',
+                message: 'Votre demande a bien été envoyé !'
+            });
+        }
+    </script>
+<?php } ?>
 
 
 </body> </html>

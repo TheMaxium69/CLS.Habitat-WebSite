@@ -1,7 +1,4 @@
-:root {
-    --color-page1-green: #17ad25;
-    --color-page1-green-hover: #7fbf7f;
-}
+
 
 #navback{
     background-color: rgb(26 26 26 / 22%);
@@ -425,7 +422,7 @@ a.btn-part:hover {
     width: 100%;
     min-height: 400px;
     height: 60vh;
-    background-image: url("../assets/back.jpeg");
+    background-image: url(https://cdn.pixabay.com/photo/2017/06/19/15/22/new-home-2419705_960_720.jpg);
     background-size: cover;
     background-position: center bottom;
     will-change: transform;
@@ -741,6 +738,10 @@ a.btn-part:hover {
 .coll-p{
     text-align: center;
     padding: 86px 65px
+}
+
+#collect-row-1{
+    margin-bottom: 27px;
 }
 
 @media (max-width: 991px) {
