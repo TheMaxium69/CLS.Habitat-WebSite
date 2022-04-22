@@ -132,7 +132,7 @@ foreach ($AllEnv as $EnvSection){
         <div class="row">
             <div class="col-xs-12">
                 <div class="section-header">
-                    Colectivité
+                    Collectivité
                 </div>
             </div>
         </div>
@@ -247,7 +247,7 @@ foreach ($AllEnv as $EnvSection){
                         Notre numéro <br>
                         <j style="color: var(--color-page1-green)"><?= $SectionNum ?></j> <br><br>
                         Notre mail <br>
-                        <j style="color: var(--color-page1-green)"><a href="mailto:<?= $SectionMail ?>"><?= $SectionMail ?></a></j> <br><br>
+                        <j style="color: var(--color-page1-green)"><a id="green" href="mailto:<?= $SectionMail ?>"><?= $SectionMail ?></a></j> <br><br>
 
                         Notre adresse <br>
                         <j style="color: var(--color-page1-green)"><?= $SectionAdresse ?></j> <br><br>

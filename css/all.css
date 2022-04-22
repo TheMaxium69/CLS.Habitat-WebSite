@@ -16,3 +16,7 @@
         float: unset;
     }
 }
+
+a#green{
+    color: var(--color-page1-green)!important;
+}
