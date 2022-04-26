@@ -6,6 +6,9 @@ function head($page)
     //Page
     if ($page == 1) {
         $title = "C.L.S Habitat";
+    } else if ($page == 2){
+        $title = "Legal Page";
+
     } else {
         $title = "404 | Exemple";
     }
