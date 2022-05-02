@@ -449,7 +449,8 @@ foreach ($AllEnv as $EnvSection){
 <footer>
     <div class="container text-white d-flex align-items-center justify-content-between">
         <a id="logo1" href="#"><img src="assets/logoT.png" alt=""></a>
-        <span>2022 © CLS-Habitat<br><a style="color: var(--color-page1-green)" href="legal.php">Mention Legal</a></span>
+        <span>2022 © CLS-Habitat<br><a style="color: var(--color-page1-green)" href="legal.php">Mention Legal</a><br><a style="color: var(--color-page1-green)" href="panel/">Panel Admin</a></span>
+
             <p style="text-align: start">
                 <a href="mailto:<?= $SectionMail ?>"><?= $SectionMail ?></a><br>
                 <?= $SectionNum ?>
