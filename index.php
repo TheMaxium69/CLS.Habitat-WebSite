@@ -121,7 +121,7 @@ foreach ($AllEnv as $EnvSection){
         </div>
         <div class="row m-12">
             <div class="col-xs-12 text-center">
-                <!--<a class=" btn-part" href="" role="button">Plus d'informations</a>-->
+                <a class=" btn-part" href="assets/pdf/Flyer%20CLS-6.pdf" role="button">Plus d'informations</a>
             </div>
         </div>
     </div>
@@ -176,7 +176,7 @@ foreach ($AllEnv as $EnvSection){
 
         <div class="row m-12">
             <div class="col-xs-12 text-center">
-                <!--<a class="btn-part" href="" role="button">Plus d'informations</a>-->
+                <a class=" btn-part" href="assets/pdf/Plaquette%20digitale.pdf" role="button">Plus d'informations</a>
             </div>
         </div>
     </div>
